@@ -17,12 +17,16 @@ public class FramePanelButtonListener implements ActionListener {
 		// massa 
 		JButton botaoCarregar = new JButton("Carregar XML");
 		ImageIcon guj = new ImageIcon("guj_2x.png");
+		
+		botaoCarregar.addActionListener(new OuvinteBotaoCaregar());
+		
 		JButton botaoSair = new JButton(guj);
 		botaoSair.addActionListener(new FramePanelButtonListener());
 
 		// recheio
 		JPanel painel = new JPanel();
 		painel.add(botaoSair);
+		painel.add(botaoCarregar);
 		
 		// ao forno
 		JFrame janela = new JFrame("Introdução");

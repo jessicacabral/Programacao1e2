@@ -7,7 +7,7 @@ public class AberturaArquivo {
 		new AberturaArquivo().processar();
 	}
 
-	private void processar() {
+	public void processar() {
 		// massa da lsanha
 		// Criamos a tela para abertura dos diretórios
 		JFileChooser arqAula = new JFileChooser();
